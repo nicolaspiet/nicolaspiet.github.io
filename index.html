@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/>
+		<link rel="stylesheet" type="text/css" href="components/styles/styles.css"/>
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+		<script src="https://kit.fontawesome.com/568ff93695.js" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<section class="hero is-fullheight header-image">
+			<!-- Hero head: will stick at the top -->
+			<div class="hero-head">
+				<nav class="navbar" role="navigation" aria-label="main navigation">
+					<div class="navbar-brand">
+						<a class="navbar-item" href="https://bulma.io">
+							<figure class="image is-32x32">
+								<img class="is-rounded" src="components/images/main-img.svg">
+							</figure>
+						</a>
+						<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNP">
+							<span style="color: white;" aria-hidden="true"></span>
+							<span style="color: white;" aria-hidden="true"></span>
+							<span style="color: white;" aria-hidden="true"></span>
+						</a>
+					</div>
+					<div id="navbarNP" class="navbar-menu">
+						<div class="navbar-end">
+							<p class="navbar-item">
+								<a><i style="font-size: 26px;" class="fab fa-linkedin-in social"></i><a>
+							</p>
+							<p class="navbar-item">
+								<a><i style="font-size: 26px;" class="fa fa-github social"></i></a>
+							</p>
+						</div>
+					</div>
+				</nav>
+			</div>
+			<div style="padding-top: 0;"class="hero-body">
+				<div class="container has-text-centered">
+					<section style="color:white;padding-top: 2em;" class="section">
+						<div class="columns is-vcentered">
+							<div data-aos="fade-up" data-aos-duration="900" class="column">
+								<div class="columns">
+									<div data-speed="-6" style="padding:0"class="column layer">
+										<span  class="title grand">Nicolas</span>
+									</div>
+								</div>
+								<div class="columns is-vcentered">
+									<div data-speed="3" style="padding:0" class="column is-two-fifth layer">
+										<h1 style="font-size: 1.79rem;font-weight: 400;word-break: normal;" class="title is-3">Lorem Ipsum</h1>
+									</div>
+									<div data-speed="10"style="padding:0"class="column is-three-quarters layer">
+										<span class="title grand">Pietro</span>
+									</div>
+								</div>
+								<div class="columns">
+									<div class="column nav-buttons">
+										<div class="buttons is-centered">
+											<button onclick="var target = $('.actualTarget'); var targetToAppear = $('#image-home'); removeElement(target, targetToAppear)" class="button is-medium is-info is-outlined">home</button>
+											<button onclick="var target = $('.actualTarget'); var targetToAppear = $('#about-home'); removeElement(target, targetToAppear)" class="button is-medium is-info is-outlined">about</button>
+											<button onclick="var target = $('.actualTarget'); var targetToAppear = $('#contact-home'); removeElement(target, targetToAppear)" class="button is-medium is-info is-outlined">contact</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="column">
+								<img class="actualTarget layer" data-speed="4" style="height: 440px;" id="image-home" src="components/images/programming-not-css.svg">
+								<div class="hiddenTarget" id="about-home">
+									<p align="left" class="subtitle is-4 line">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. consectetur adipisicing elit. 🍔</p>
+								</div>
+								<div style="margin-left: 1em;" class="hiddenTarget" id="contact-home">
+									<form>
+										<div class="field">
+											<p class="control has-icons-left">
+												<input required style="font-weight: 400;" class="input" type="email" placeholder="Your Email">
+												<span class="icon is-small is-left">
+													<i class="fas fa-envelope"></i>
+												</span>
+											</p>
+										</div>
+										<div class="field">
+											<div class="control">
+												<textarea style="font-weight: 400;" class="has-fixed-size textarea" required placeholder="Your message goes here."></textarea>
+											</div>
+										</div>
+										<div class="field">
+											<p class="control">
+												<button type="submit" class="button is-info is-outlined">
+												Send
+												</button>
+											</p>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div style="margin-top: 2em;"class="hero-foot">
+				<footer style="color: white;background-color: #111111;" class="footer">
+					<div class="content has-text-centered">
+						<p class="footer-content" style="font-weight:400">
+							<strong style="color:white;">Site</strong> by <a href="https://github.com/nicolaspiet">Nicolas Pietro</a>. The source code is available at
+							<a href="https://github.com/nicolaspiet">Github</a>. <br> Rocket illustrations by <a href="https://storyset.com/rocket">Storyset</a>
+						</p>
+					</div>
+				</footer>
+			</div>
+		</section>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+		<script src="components/src/index.js"></script>
+		<script>
+		AOS.init();
+		</script>
+	</body>
+</html>
